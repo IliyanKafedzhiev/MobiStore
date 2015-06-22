@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11D29E7D1B37F30800680561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D29E7C1B37F30800680561 /* AppDelegate.swift */; };
+		11D29E7F1B37F30800680561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D29E7E1B37F30800680561 /* ViewController.swift */; };
+		11D29E821B37F30900680561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D29E801B37F30900680561 /* Main.storyboard */; };
+		11D29E841B37F30900680561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D29E831B37F30900680561 /* Assets.xcassets */; };
+		11D29E871B37F30900680561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D29E851B37F30900680561 /* LaunchScreen.storyboard */; };
+		11D29E921B37F30900680561 /* MobiStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D29E911B37F30900680561 /* MobiStoreTests.swift */; };
+		11D29E9D1B37F30900680561 /* MobiStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D29E9C1B37F30900680561 /* MobiStoreUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11D29E8E1B37F30900680561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11D29E711B37F30800680561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11D29E781B37F30800680561;
+			remoteInfo = MobiStore;
+		};
+		11D29E991B37F30900680561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11D29E711B37F30800680561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11D29E781B37F30800680561;
+			remoteInfo = MobiStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11D29E791B37F30800680561 /* MobiStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D29E7C1B37F30800680561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11D29E7E1B37F30800680561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11D29E811B37F30900680561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11D29E831B37F30900680561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11D29E861B37F30900680561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11D29E881B37F30900680561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D29E8D1B37F30900680561 /* MobiStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D29E911B37F30900680561 /* MobiStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiStoreTests.swift; sourceTree = "<group>"; };
+		11D29E931B37F30900680561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D29E981B37F30900680561 /* MobiStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D29E9C1B37F30900680561 /* MobiStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiStoreUITests.swift; sourceTree = "<group>"; };
+		11D29E9E1B37F30900680561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11D29E761B37F30800680561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11D29E8A1B37F30900680561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11D29E951B37F30900680561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11D29E701B37F30800680561 = {
+			isa = PBXGroup;
+			children = (
+				11D29E7B1B37F30800680561 /* MobiStore */,
+				11D29E901B37F30900680561 /* MobiStoreTests */,
+				11D29E9B1B37F30900680561 /* MobiStoreUITests */,
+				11D29E7A1B37F30800680561 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11D29E7A1B37F30800680561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11D29E791B37F30800680561 /* MobiStore.app */,
+				11D29E8D1B37F30900680561 /* MobiStoreTests.xctest */,
+				11D29E981B37F30900680561 /* MobiStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11D29E7B1B37F30800680561 /* MobiStore */ = {
+			isa = PBXGroup;
+			children = (
+				11D29E7C1B37F30800680561 /* AppDelegate.swift */,
+				11D29E7E1B37F30800680561 /* ViewController.swift */,
+				11D29E801B37F30900680561 /* Main.storyboard */,
+				11D29E831B37F30900680561 /* Assets.xcassets */,
+				11D29E851B37F30900680561 /* LaunchScreen.storyboard */,
+				11D29E881B37F30900680561 /* Info.plist */,
+			);
+			path = MobiStore;
+			sourceTree = "<group>";
+		};
+		11D29E901B37F30900680561 /* MobiStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				11D29E911B37F30900680561 /* MobiStoreTests.swift */,
+				11D29E931B37F30900680561 /* Info.plist */,
+			);
+			path = MobiStoreTests;
+			sourceTree = "<group>";
+		};
+		11D29E9B1B37F30900680561 /* MobiStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11D29E9C1B37F30900680561 /* MobiStoreUITests.swift */,
+				11D29E9E1B37F30900680561 /* Info.plist */,
+			);
+			path = MobiStoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11D29E781B37F30800680561 /* MobiStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D29EA11B37F30900680561 /* Build configuration list for PBXNativeTarget "MobiStore" */;
+			buildPhases = (
+				11D29E751B37F30800680561 /* Sources */,
+				11D29E761B37F30800680561 /* Frameworks */,
+				11D29E771B37F30800680561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobiStore;
+			productName = MobiStore;
+			productReference = 11D29E791B37F30800680561 /* MobiStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11D29E8C1B37F30900680561 /* MobiStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D29EA41B37F30900680561 /* Build configuration list for PBXNativeTarget "MobiStoreTests" */;
+			buildPhases = (
+				11D29E891B37F30900680561 /* Sources */,
+				11D29E8A1B37F30900680561 /* Frameworks */,
+				11D29E8B1B37F30900680561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11D29E8F1B37F30900680561 /* PBXTargetDependency */,
+			);
+			name = MobiStoreTests;
+			productName = MobiStoreTests;
+			productReference = 11D29E8D1B37F30900680561 /* MobiStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11D29E971B37F30900680561 /* MobiStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D29EA71B37F30900680561 /* Build configuration list for PBXNativeTarget "MobiStoreUITests" */;
+			buildPhases = (
+				11D29E941B37F30900680561 /* Sources */,
+				11D29E951B37F30900680561 /* Frameworks */,
+				11D29E961B37F30900680561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11D29E9A1B37F30900680561 /* PBXTargetDependency */,
+			);
+			name = MobiStoreUITests;
+			productName = MobiStoreUITests;
+			productReference = 11D29E981B37F30900680561 /* MobiStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11D29E711B37F30800680561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = MobiSystems;
+				TargetAttributes = {
+					11D29E781B37F30800680561 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					11D29E8C1B37F30900680561 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 11D29E781B37F30800680561;
+					};
+					11D29E971B37F30900680561 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 11D29E781B37F30800680561;
+					};
+				};
+			};
+			buildConfigurationList = 11D29E741B37F30800680561 /* Build configuration list for PBXProject "MobiStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11D29E701B37F30800680561;
+			productRefGroup = 11D29E7A1B37F30800680561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11D29E781B37F30800680561 /* MobiStore */,
+				11D29E8C1B37F30900680561 /* MobiStoreTests */,
+				11D29E971B37F30900680561 /* MobiStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11D29E771B37F30800680561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D29E871B37F30900680561 /* LaunchScreen.storyboard in Resources */,
+				11D29E841B37F30900680561 /* Assets.xcassets in Resources */,
+				11D29E821B37F30900680561 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11D29E8B1B37F30900680561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11D29E961B37F30900680561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11D29E751B37F30800680561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D29E7F1B37F30800680561 /* ViewController.swift in Sources */,
+				11D29E7D1B37F30800680561 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11D29E891B37F30900680561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D29E921B37F30900680561 /* MobiStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11D29E941B37F30900680561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D29E9D1B37F30900680561 /* MobiStoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11D29E8F1B37F30900680561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11D29E781B37F30800680561 /* MobiStore */;
+			targetProxy = 11D29E8E1B37F30900680561 /* PBXContainerItemProxy */;
+		};
+		11D29E9A1B37F30900680561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11D29E781B37F30800680561 /* MobiStore */;
+			targetProxy = 11D29E991B37F30900680561 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11D29E801B37F30900680561 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11D29E811B37F30900680561 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11D29E851B37F30900680561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11D29E861B37F30900680561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11D29E9F1B37F30900680561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11D29EA01B37F30900680561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11D29EA21B37F30900680561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MobiStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11D29EA31B37F30900680561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MobiStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		11D29EA51B37F30900680561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MobiStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiStore.app/MobiStore";
+			};
+			name = Debug;
+		};
+		11D29EA61B37F30900680561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MobiStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiStore.app/MobiStore";
+			};
+			name = Release;
+		};
+		11D29EA81B37F30900680561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MobiStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MobiStore;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		11D29EA91B37F30900680561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MobiStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MobiStore;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11D29E741B37F30800680561 /* Build configuration list for PBXProject "MobiStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D29E9F1B37F30900680561 /* Debug */,
+				11D29EA01B37F30900680561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11D29EA11B37F30900680561 /* Build configuration list for PBXNativeTarget "MobiStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D29EA21B37F30900680561 /* Debug */,
+				11D29EA31B37F30900680561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		11D29EA41B37F30900680561 /* Build configuration list for PBXNativeTarget "MobiStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D29EA51B37F30900680561 /* Debug */,
+				11D29EA61B37F30900680561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		11D29EA71B37F30900680561 /* Build configuration list for PBXNativeTarget "MobiStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D29EA81B37F30900680561 /* Debug */,
+				11D29EA91B37F30900680561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11D29E711B37F30800680561 /* Project object */;
+}
