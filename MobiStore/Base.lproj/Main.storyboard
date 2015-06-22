@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MobiStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eB9-16-QWF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sF5-eX-MyJ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eB9-16-QWF" firstAttribute="bottom" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CmQ-G8-1yo"/>
+                            <constraint firstItem="sF5-eX-MyJ" firstAttribute="leading" secondItem="eB9-16-QWF" secondAttribute="leading" id="KR0-zn-Lob"/>
+                            <constraint firstAttribute="trailing" secondItem="sF5-eX-MyJ" secondAttribute="trailing" id="bia-FU-HQW"/>
+                            <constraint firstItem="sF5-eX-MyJ" firstAttribute="trailing" secondItem="eB9-16-QWF" secondAttribute="trailing" id="cN6-oA-YFU"/>
+                            <constraint firstItem="sF5-eX-MyJ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="jU4-h9-hPE"/>
+                            <constraint firstItem="sF5-eX-MyJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qhO-NX-fdO"/>
+                            <constraint firstItem="sF5-eX-MyJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uGJ-YD-yhq"/>
+                            <constraint firstItem="eB9-16-QWF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zKg-79-bGN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainWebMobiView" destination="sF5-eX-MyJ" id="Fxs-Ap-rne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="519" y="422"/>
         </scene>
     </scenes>
 </document>
