@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var mainWebMobiView: UIWebView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad()
     {
@@ -20,7 +21,28 @@ class ViewController: UIViewController {
         let url        = NSURL(string: urlAddress)
         let requestObj = NSURLRequest(URL: url!)
         
+        self.mainWebMobiView.delegate = self
         self.mainWebMobiView.loadRequest(requestObj)
+    }
+    
+    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool
+    {
+        return true;
+    }
+    
+    func webViewDidStartLoad(webView: UIWebView)
+    {
+        self.spinner.startAnimating()
+    }
+    func webViewDidFinishLoad(webView: UIWebView)
+    {
+        self.mainWebMobiView.hidden = false
+        self.spinner.stopAnimating()
+    }
+    
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError)
+    {
+        self.mainWebMobiView.hidden = true;
     }
 }
 
