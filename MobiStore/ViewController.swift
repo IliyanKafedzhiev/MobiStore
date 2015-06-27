@@ -12,12 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainWebMobiView: UIWebView!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let urlAddress = "http://www.google.com"
-        let url = NSURL(string: urlAddress)
+        
+        let urlAddress = "https://www.mobisystems.com/featured/"
+        let url        = NSURL(string: urlAddress)
         let requestObj = NSURLRequest(URL: url!)
+        
         self.mainWebMobiView.loadRequest(requestObj)
     }
 }
