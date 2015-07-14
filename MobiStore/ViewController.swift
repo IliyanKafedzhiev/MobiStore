@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
     {
         super.viewDidLoad()
         
-        let urlAddress = "https://www.mobisystems.com/featured/"
+        let urlAddress = "https://www.mobisystems.com/featured/?iosApp=1"
         let url        = NSURL(string: urlAddress)
         let requestObj = NSURLRequest(URL: url!)
         
