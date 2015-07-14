@@ -27,6 +27,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
     
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool
     {
+        // TODO open external links with ios browser
         return true;
     }
     

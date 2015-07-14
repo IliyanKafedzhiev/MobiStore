@@ -397,7 +397,7 @@
 				INFOPLIST_FILE = MobiStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobisystems.MobiStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -409,7 +409,7 @@
 				INFOPLIST_FILE = MobiStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobisystems.MobiStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -420,7 +420,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MobiStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStoreTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobisystems.MobiStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiStore.app/MobiStore";
 			};
@@ -432,7 +432,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MobiStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStoreTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobisystems.MobiStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiStore.app/MobiStore";
 			};
@@ -443,7 +443,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = MobiStoreUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStoreUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobisystems.MobiStoreUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MobiStore;
 				USES_XCTRUNNER = YES;
@@ -455,7 +455,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = MobiStoreUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mobisystems.MobiStoreUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobisystems.MobiStoreUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MobiStore;
 				USES_XCTRUNNER = YES;
