@@ -34,9 +34,11 @@ class ViewController: UIViewController, UIWebViewDelegate {
     func webViewDidStartLoad(webView: UIWebView)
     {
         self.spinner.startAnimating()
+        UIApplication.sharedApplication.networkActivityIndicatorVisible = YES
     }
     func webViewDidFinishLoad(webView: UIWebView)
     {
+        UIApplication.sharedApplication.networkActivityIndicatorVisible = NO
         self.mainWebMobiView.hidden = false
         self.spinner.stopAnimating()
     }
@@ -44,6 +46,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
     func webView(webView: UIWebView, didFailLoadWithError error: NSError)
     {
         self.mainWebMobiView.hidden = true;
+        UIApplication.sharedApplication.networkActivityIndicatorVisible = NO;
     }
 }
 
