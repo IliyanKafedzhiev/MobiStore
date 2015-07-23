@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Web View Controller-->
@@ -16,41 +17,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="cbC-Qp-bmK">
+                                <rect key="frame" x="-11" y="-13" width="623" height="625"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eB9-16-QWF">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.91764705882352937" green="0.18431372549019609" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="VFS-ff-KMP">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
                             <webView hidden="YES" contentMode="redraw" scalesPageToFit="YES" suppressesIncrementalRendering="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sF5-eX-MyJ">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </webView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="VFS-ff-KMP">
-                                <rect key="frame" x="290" y="290" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eB9-16-QWF" firstAttribute="bottom" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CmQ-G8-1yo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cbC-Qp-bmK" secondAttribute="trailing" constant="-27" id="IJI-qK-df8"/>
                             <constraint firstItem="sF5-eX-MyJ" firstAttribute="leading" secondItem="eB9-16-QWF" secondAttribute="leading" id="KR0-zn-Lob"/>
+                            <constraint firstItem="cbC-Qp-bmK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-11" id="RcO-Qh-qDy"/>
                             <constraint firstItem="VFS-ff-KMP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YfD-Rp-EdN"/>
                             <constraint firstAttribute="trailing" secondItem="sF5-eX-MyJ" secondAttribute="trailing" id="bia-FU-HQW"/>
                             <constraint firstItem="sF5-eX-MyJ" firstAttribute="trailing" secondItem="eB9-16-QWF" secondAttribute="trailing" id="cN6-oA-YFU"/>
+                            <constraint firstItem="cbC-Qp-bmK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-28" id="e5e-Ru-6n1"/>
                             <constraint firstItem="sF5-eX-MyJ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="jU4-h9-hPE"/>
                             <constraint firstItem="sF5-eX-MyJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qhO-NX-fdO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="cbC-Qp-bmK" secondAttribute="bottom" constant="-14" id="riI-rC-fYj"/>
                             <constraint firstItem="sF5-eX-MyJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uGJ-YD-yhq"/>
                             <constraint firstItem="VFS-ff-KMP" firstAttribute="centerX" secondItem="eB9-16-QWF" secondAttribute="centerX" id="uSe-cT-Thd"/>
                             <constraint firstItem="eB9-16-QWF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zKg-79-bGN"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="cbC-Qp-bmK" id="3hN-el-NuF"/>
                         <outlet property="mainWebMobiView" destination="sF5-eX-MyJ" id="Fxs-Ap-rne"/>
                         <outlet property="spinner" destination="VFS-ff-KMP" id="3db-09-yxd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519" y="422"/>
+            <point key="canvasLocation" x="340" y="151"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BackgroundImage" width="1536" height="2048"/>
+    </resources>
 </document>

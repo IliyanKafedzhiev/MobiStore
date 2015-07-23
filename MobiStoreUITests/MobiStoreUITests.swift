@@ -29,6 +29,25 @@ class MobiStoreUITests: XCTestCase {
     
     func testCF() {
         // Use recording to get started writing UI tests.
+        let app = XCUIApplication()
+        let element = app.childrenMatchingType(.Window).elementAtIndex(0).childrenMatchingType(.Unknown).elementAtIndex(0).childrenMatchingType(.Unknown).elementAtIndex(2).childrenMatchingType(.Unknown).elementAtIndex(0).childrenMatchingType(.Unknown).elementAtIndex(0)
+        element.tap()
+        app.staticTexts["OFFICESUITE"].tap()
+        
+        let oxfordDictionaryOfEnglishWithAudioStaticText = app.descendantsMatchingType(.Unknown)["article"].staticTexts["Oxford Dictionary of English with Audio"]
+        oxfordDictionaryOfEnglishWithAudioStaticText.swipeLeft()
+        element.swipeLeft()
+        element.swipeLeft()
+        oxfordDictionaryOfEnglishWithAudioStaticText.swipeLeft()
+        element.swipeLeft()
+        app.staticTexts["Updated: 2014-12-19"].swipeLeft()
+        app.staticTexts["REFERENCE"].tap()
+        element.tap()
+        app.descendantsMatchingType(.Unknown)["article"].childrenMatchingType(.Unknown).elementAtIndex(3).links["Buy Now €49.99 €24.99"].tap()
+        element.swipeLeft()
+        element.tap()
+        app.descendantsMatchingType(.Unknown)["banner"].staticTexts["STORE"].tap()
+        app.descendantsMatchingType(.Unknown)["banner"].staticTexts["SUPPORT"].tap()
         
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

@@ -12,6 +12,8 @@ class WebViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var mainWebMobiView: UIWebView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     static let mobiAppStoreURL = "https://www.mobisystems.com/featured/?iosApp=1"
     
@@ -35,7 +37,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     func informError(error :NSError )
     {
         let localizedDescription = error.localizedDescription;
-        var alertView = UIAlertController(title: "MobiStore", message: localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+        let alertView = UIAlertController(title: "MobiStore", message: localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
         
         alertView.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.Default, handler:  { action in
                 self.requestServer()
@@ -69,6 +71,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         self.mainWebMobiView.hidden = false
         self.spinner.stopAnimating()
+        self.backgroundImage.removeFromSuperview()
     }
     
     func webView(webView: UIWebView, didFailLoadWithError error: NSError)
