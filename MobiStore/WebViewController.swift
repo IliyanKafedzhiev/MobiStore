@@ -76,7 +76,10 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     {
         self.mainWebMobiView.hidden = true;
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-        self.informError(error)
+        if (!(error.domain == NSURLErrorDomain) || (error.code != NSURLErrorCancelled))
+        {
+            self.informError(error)
+        }
     }
 }
 
